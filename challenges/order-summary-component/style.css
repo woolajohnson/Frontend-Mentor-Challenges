@@ -1,0 +1,125 @@
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+.card {
+    width: 430px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 15px rgba(197, 189, 245, 0.2);
+}
+
+.hero-image img{
+    width: 100%;
+}
+
+.container {
+    padding: 30px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container > * {
+    margin-bottom: 20px;
+}
+
+.container h2 {
+    font-weight: 900;
+}
+
+.container p {
+    line-height: 25px;
+    color: var(--desaturated-blue);
+}
+
+.plan-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--very-pale-blue);
+    padding: 15px 0;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.plan-section img {
+    margin-left: 20px;
+}
+
+.plan-title {
+    margin-left: -80px;
+}
+
+.plan-title strong {
+    font-weight: 900;
+}
+
+.plan-section a {
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: color 0.2s;
+}
+
+.plan-section a:hover {
+    text-decoration: none;
+    color: var(--bright-blue);
+}
+
+.payment-button, .cancel-button {
+    padding: 1rem 0;
+    border: none;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.payment-button {
+    background-color: var(--bright-blue);
+    color: #fff;
+    /* box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 12px 10px rgba(197, 189, 245, 0.6);
+    margin-top: 10px;
+    transition: opacity 0.2s;
+}
+
+.payment-button:hover {
+    opacity: 0.7;
+}
+
+.cancel-button {
+    background-color: #fff;
+    color: var(--desaturated-blue);
+    transition: color 0.2s;
+    padding-bottom: 0;
+}
+
+.cancel-button:hover {
+    color: var(--dark-blue);
+}
