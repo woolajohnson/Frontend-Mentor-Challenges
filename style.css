@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container  {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 30px;
+    color: darkslategray;
+}
+
+.items {
+    margin-top: 50px;
+}
+
+.list-item {
+    padding: 10px;
+    background-color: darkslategray;
+    display: inline-block;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.list-item a {
+    text-decoration: none;
+    color: azure;
+}
