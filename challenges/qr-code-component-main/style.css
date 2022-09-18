@@ -11,5 +11,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Outfit', sans-serif; */
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--light-gray);
+}
+
+.card {
+    max-width: 300px;
+    text-align: center;
+    background: var(--white);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card > * {
+    margin-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card .text {
+    padding: 5px 10px;
+}
+
+.card h3 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(-dark-blue);
+}
+
+.card p {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--grayish-blue);
 }
